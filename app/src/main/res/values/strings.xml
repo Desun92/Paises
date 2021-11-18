@@ -5,6 +5,9 @@
     <string name="acerca_de">Acerca de</string>
     <string name="texto_acerca_de">Aplicación creada por Adrián Castro Villacañas.
         Esta aplicación muestra una lista de países y su detalle correspondiente, junto con una foto</string>
+    <string name="juega">Juega</string>
+    <string name="pregunta">¿De dónde es esta bandera?</string>
+    <string name="btnAceptar">Aceptar</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -23,4 +26,6 @@
     <!-- Settings Preferences -->
     <string name="lineaSeparacion">Mostrar línea de separación entre elementos del listado</string>
     <string name="formatoListado">Formato del listado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

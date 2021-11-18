@@ -4,14 +4,21 @@
     tools:context="com.acv.paises.MainActivity">
     <item
         android:id="@+id/settingsFragment"
-        android:orderInCategory="100"
+        android:orderInCategory="1"
         android:title="@string/action_settings"
         app:showAsAction="never"
         />
     <item
         android:id="@+id/acercaDeFragment"
-        android:orderInCategory="99"
+        android:orderInCategory="2"
         android:title="@string/acerca_de"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/juega"
+        android:title="¡Juega!"
+        android:orderInCategory="3"
         app:showAsAction="never"
         />
 </menu>

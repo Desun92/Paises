@@ -31,4 +31,9 @@
         android:id="@+id/settingsFragment"
         android:name="com.acv.paises.SettingsFragment"
         android:label="@string/action_settings" />
+    <fragment
+        android:id="@+id/juega"
+        android:name="com.acv.paises.Juega"
+        android:label="@string/juega"
+        tools:layout="@layout/fragment_juega" />
 </navigation>

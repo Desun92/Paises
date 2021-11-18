@@ -10,6 +10,24 @@
         <item>espana</item>
     </string-array>
 
+    <string-array name="respuestas">
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Bélgica</item>
+        <item>Canadá</item>
+        <item>Dinamarca</item>
+        <item>España</item>
+    </string-array>
+
+    <string-array name="banderas">
+        <item>@drawable/bandera_argentina</item>
+        <item>@drawable/bandera_australia</item>
+        <item>@drawable/bandera_belgica</item>
+        <item>@drawable/bandera_canada</item>
+        <item>@drawable/bandera_dinamarca</item>
+        <item>@drawable/bandera_espana</item>
+    </string-array>
+
     <string-array name="argentina">
         <item>Argentina</item>
         <item>@drawable/argentina</item>
