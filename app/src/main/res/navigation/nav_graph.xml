@@ -11,7 +11,11 @@
         tools:layout="@layout/fragment_paises_list" >
         <action
             android:id="@+id/action_paisesFragment_to_detallePaisFragment"
-            app:destination="@id/detallePaisFragment" />
+            app:destination="@id/detallePaisFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/detallePaisFragment"
@@ -30,10 +34,11 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.acv.paises.SettingsFragment"
-        android:label="@string/action_settings" />
+        android:label="@string/action_settings"
+        />
     <fragment
         android:id="@+id/juega"
-        android:name="com.acv.paises.Juega"
+        android:name="com.acv.paises.JuegoBanderasFragment"
         android:label="@string/juega"
-        tools:layout="@layout/fragment_juega" />
+        tools:layout="@layout/fragment_juego_banderas" />
 </navigation>
