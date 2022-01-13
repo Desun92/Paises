@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.navigation.Navigation;
@@ -12,6 +13,7 @@ import androidx.navigation.Navigation;
 import com.acv.paises.placeholder.PlaceholderContent.Pais;
 import com.acv.paises.databinding.FragmentPaisBinding;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +23,7 @@ import java.util.List;
 public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerViewAdapter.ViewHolder> {
 
     private final List<Pais> mValues;
+    private ArrayList<Bandera> banderas;
 
     public PaisRecyclerViewAdapter(List<Pais> items) {
         mValues = items;
@@ -37,11 +40,15 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         holder.mContentView.setText(mValues.get(position).nombre);
+
+        holder.imgBanderaClase.setImageResource(banderas.get(position).getIdImagen());
+        holder.textoTarjeta.setText(banderas.get(position).getNombrePais());
     }
 
     @Override
     public int getItemCount() {
-        return mValues.size();
+        //return mValues.size();
+        return banderas.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -49,10 +56,15 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
         public final TextView mContentView;
         public Pais mItem;
 
+        ImageView imgBanderaClase;
+        TextView textoTarjeta;
+
         public ViewHolder(FragmentPaisBinding binding) {
             super(binding.getRoot());
             mContentView = binding.content;
             binding.getRoot().setOnClickListener(this);
+            imgBanderaClase = binding.imgBandera;
+            textoTarjeta = binding.content;
         }
 
         @Override
