@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 import com.acv.paises.placeholder.PlaceholderContent.Pais;
 import com.acv.paises.databinding.FragmentPaisBinding;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,9 +24,9 @@ import java.util.List;
 public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerViewAdapter.ViewHolder> {
 
     private final List<Pais> mValues;
-    private ArrayList<Bandera> banderas;
+    ArrayList<Bandera> banderas;
 
-    public PaisRecyclerViewAdapter(List<Pais> items) {
+    public PaisRecyclerViewAdapter(List<Pais> items, ArrayList<Bandera> banderas) {
         mValues = items;
     }
 
