@@ -28,6 +28,7 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
 
     public PaisRecyclerViewAdapter(List<Pais> items, ArrayList<Bandera> banderas) {
         mValues = items;
+        this.banderas=banderas;
     }
 
     @Override
