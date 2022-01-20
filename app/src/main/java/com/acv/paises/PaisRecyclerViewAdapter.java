@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.navigation.Navigation;
@@ -44,7 +45,7 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
         holder.mContentView.setText(mValues.get(position).nombre);
 
         holder.imgBanderaClase.setImageResource(banderas.get(position).getIdImagen());
-        holder.textoTarjeta.setText(banderas.get(position).getNombrePais());
+        //holder.textoTarjeta.setText(banderas.get(position).getNombrePais());
     }
 
     @Override
@@ -66,7 +67,7 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
             mContentView = binding.content;
             binding.getRoot().setOnClickListener(this);
             imgBanderaClase = binding.imgBandera;
-            textoTarjeta = binding.content;
+            //textoTarjeta = binding.content;
         }
 
         @Override
